@@ -13,6 +13,7 @@ class FluxFMRSSEntry(BaseModel):
     """
     A PyDantic model for a Flux FM RSS feed entry.
     """
+
     title: str
     published_time: struct_time
 
@@ -50,6 +51,7 @@ class FluxFMRSSReader:
     """
     A simple RSS Reader class for Flux FM streams.
     """
+
     def __init__(self, rss_url: str) -> None:
         """
         :param rss_url: The RSS feed URL
