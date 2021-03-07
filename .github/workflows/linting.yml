@@ -53,3 +53,8 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SUPPRESS_POSSUM: true
+          LINTER_RULES_PATH: .
+          PYTHON_BLACK_CONFIG_FILE: pyproject.toml
+          PYTHON_FLAKE8_CONFIG_FILE: .flake8
+          PYTHON_ISORT_CONFIG_FILE: pyproject.toml
+          PYTHON_PYLINT_CONFIG_FILE: pyproject.toml
